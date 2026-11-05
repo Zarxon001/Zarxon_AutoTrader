@@ -1,0 +1,16 @@
+{
+  "symbol": "DEMO-XAUUSD",
+  "direction": "BUY",
+  "demo_only": true,
+  "execution": "disabled",
+  "timestamp_utc": "2026-01-01T00:35:00+00:00",
+  "reason": "SMA(3) SMA(5)ni yuqoriga kesib o'tdi.",
+  "sma": {
+    "short": "4101.666666666666666666666667",
+    "long": "4100.8"
+  },
+  "entry": "4105.00",
+  "sl": "4063.95",
+  "tp": "4187.10",
+  "reward_ratio": "2"
+}

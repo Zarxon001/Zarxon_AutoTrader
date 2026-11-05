@@ -3,8 +3,8 @@
 Faqat CSVdan SMA kesishuvini hisoblaydigan demo. Tarmoq, broker ulanishi,
 API kaliti, order yuborish yoki avtomatik savdo qatlami yo'q.
 
-Bu 2026-11-06 kuni shu kompyuterda qayta tayyorlangan draft. Boshqa chatdagi
-vaqtinchalik draftning aynan nusxasi emas. GitHubga commit yoki push qilinmadi.
+MVP mustaqil ishlaydi: mavjud Zarxon serverini yoki MT5 terminalini ishga
+tushirish talab qilinmaydi.
 
 ## Ishlatish
 
@@ -43,9 +43,11 @@ Namunadagi tarix va narxlar sun'iy; joriy kotirovka emas. Komissiya, spred,
 sirpanish, lot hajmi va strategiya rentabelligi bu MVPda hisoblanmaydi.
 Bu paket mavjud Zarxon serveri yoki MT5 signal bridge'iga ulanmagan.
 
-## Ko'rib chiqish uchun
+## Avtomatik testlar
 
-GitHub bazasi 2026-11-06 tekshiruvida:
-`Zarxon001/Zarxon_AutoTrader`, main, `c30d9e8d7c18e0ecf182b77d2df5a04191ede7ee`.
-Repoda faqat boshlang'ich README mavjud edi. Ushbu draftni kiritishdan oldin
-repo holati yana tekshiriladi va alohida commit/push tasdig'i olinadi.
+`.github/workflows/tests.yml` main uchun pull requestlarda va main yangilanganda
+unit/CLI testlari hamda CSV demosini ishga tushiradi. Matritsa: Windows va Linux,
+Python 3.11 va 3.14. Tashqi Python paketlari talab qilinmaydi.
+
+Workflow faqat repo kodini o'qish ruxsatiga ega; broker kalitlari yoki boshqa
+maxfiy qiymatlar talab qilmaydi. Joriy CI natijalarini PRning Checks bo'limidan ko'ring.
